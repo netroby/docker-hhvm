@@ -10,6 +10,7 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e728
 VOLUME /www
 ENV TERM xterm
 COPY entrypoint.sh /entrypoint.sh
+COPY php.ini /etc/hhvm/php.ini
 
 ENTRYPOINT ["/entrypoint.sh"]
 
