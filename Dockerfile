@@ -16,4 +16,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 9000 8080 80
 
-CMD ["hhvm", "--mode", "server", "-c", "/etc/hhvm/server.ini"]
+CMD ["hhvm", "--mode", "server", "-c", "/etc/hhvm/php.ini"]
