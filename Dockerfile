@@ -14,6 +14,6 @@ COPY php.ini /etc/hhvm/php.ini
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 9000 80
+EXPOSE 9000
 
 CMD ["hhvm", "--mode", "server", "-c", "/etc/hhvm/php.ini"]
